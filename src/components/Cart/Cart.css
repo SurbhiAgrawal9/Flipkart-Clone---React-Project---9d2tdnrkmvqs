@@ -19,6 +19,11 @@
     width: 50%;
 }
 
+
+h4 .gsttotal {
+    background-color: green;
+}
+
 .dele {
     margin-right: 30px;
     margin-top: 40px;

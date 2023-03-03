@@ -1,6 +1,7 @@
 .compcard {
     display: flex;
     width: 100%;
+    /* background-color: rgb(251, 245, 251); */
 }
 
 .btn {
@@ -32,16 +33,31 @@
     justify-content: space-between;
     align-items: center;
     width: 250px;
-    height: 420px;
+    height: 430px;
     margin: 20px;
     border: 1px solid grey;
     border-radius: 8px;
     padding: 18px;
     transform: scale(1);
     transition: .5s;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 3px 2px 4px gray;
+
 }
 
+.compcard:hover {
+    box-shadow: 0px 3px 3px;
+}
+
+.compcard img {
+    margin: auto;
+
+}
+
+.compcard img:hover {
+    height: 200px;
+    background-color: aliceblue;
+
+}
 
 
 .wish {

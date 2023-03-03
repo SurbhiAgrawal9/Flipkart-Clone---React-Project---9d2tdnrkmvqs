@@ -1,4 +1,5 @@
 import React from 'react'
+import Banner from '../Banner/Banner'
 import Navbar from '../Navbar/Navbar'
 import Product from '../Product/Product'
 import './Home.css'
@@ -10,6 +11,7 @@ const Home = () => {
             <div className="nav-all">
                 <Navbar />
             </div>
+
             <div className="maincomp">
                 <Product />
             </div>

@@ -117,20 +117,20 @@ const Buy = (props) => {
                 <from className='from'>
                     <div className='pin'>
                         <label htmlFor="Pincode">Pincode :- </label>
-                        <input type="text" placeholder='Enter Pincode . . ' value={pincode} onChange={e => setPincode(e.target.value)} />
+                        <input type="text" placeholder='Enter Pincode .. ' value={pincode} onChange={e => setPincode(e.target.value)} />
                         <span>Check delivery available or not</span>
                     </div>
                     <div className='name'>
                         <label htmlFor="Name">Name :- </label>
-                        <input type="text" placeholder='Enter Name . . ' value={name} onChange={e => setName(e.target.value)} />
+                        <input type="text" placeholder='Enter Name .. ' value={name} onChange={e => setName(e.target.value)} />
                     </div>
                     <div className='name'>
                         <label htmlFor="Email">Email :- </label>
-                        <input type="text" placeholder='Enter Email . . ' value={email} onChange={e => setEmaill(e.target.value)} />
+                        <input type="text" placeholder='Enter Email .. ' value={email} onChange={e => setEmaill(e.target.value)} />
                     </div>
                     <div className='name'>
                         <label htmlFor="Address">Address :- </label>
-                        <textarea type="text" placeholder='Enter Address . . ' className='add' value={address} onChange={e => setAddress(e.target.value)} />
+                        <textarea type="text" placeholder='Enter Address .. ' className='add' value={address} onChange={e => setAddress(e.target.value)} />
                     </div>
                     <div className="name">
                         <button className="btn" onClick={showMsg}>Order Now</button>
@@ -142,4 +142,4 @@ const Buy = (props) => {
     )
 }
 
-export default Buy
+export default Buygit

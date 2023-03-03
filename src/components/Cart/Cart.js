@@ -27,7 +27,9 @@ const Cart = () => {
     useEffect(() => {
         let count = 0;
         state.map((i) => {
-            count += i.price;
+            const gst = (i.price * 15) / 100;
+
+            count += i.price + gst;
         })
         setTotalPrice(count);
     }, [state])
@@ -57,6 +59,7 @@ const Cart = () => {
             <div className='container my-5'>
                 {
                     state.map((item, index) => {
+                        let gst = (item.price * 15) / 100;
                         return (
                             <div className="onecomp">
                                 <img src={item.image} alt="snapdeal" />
@@ -64,6 +67,7 @@ const Cart = () => {
                                     <h4>{item.title}</h4>
                                     <p>Rating : {item.rating.rate}</p>
                                     <h4>${item.price}</h4>
+                                    <h4 className='gsttotal'>15% gst, total price = {item.price + gst}</h4>
                                 </div>
                                 <div className="count">
                                     <button onClick={() => dispatch1({ type: 'INCREMENT', paylode: item })}>+</button>
@@ -79,7 +83,7 @@ const Cart = () => {
                 }
 
                 <NavLink to={{ pathname: '/buyNow', state: { price: totalPrice } }}>
-                    <button  className='btn buybtn'>Buy Now for $ {totalPrice}</button>
+                    <button className='btn buybtn'>Buy Now for $ {totalPrice}</button>
                 </NavLink>
             </div>
 

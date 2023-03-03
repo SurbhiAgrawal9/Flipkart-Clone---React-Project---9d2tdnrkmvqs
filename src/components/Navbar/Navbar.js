@@ -4,14 +4,18 @@ import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
 import { NavLink } from 'react-router-dom';
 import { useAuth0 } from "@auth0/auth0-react";
+import { useContext } from 'react';
+import { CartContext } from '../Context/Context';
 
 
 const Navbar = () => {
     const { loginWithRedirect } = useAuth0();
     const { logout } = useAuth0();
     const { isAuthenticated, user } = useAuth0();
+    const GlobalState = useContext(CartContext);
+    const state = GlobalState.state;
 
-  const logoURL = ' https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
+    const logoURL = ' https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/flipkart-plus_8d85f4.png';
     // const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
 
     return (
@@ -31,6 +35,7 @@ const Navbar = () => {
                 <NavLink to="/Cart" >
                     <i className="fa fa-shopping-cart"></i>
                     <span>Cart</span>
+                    <h6 className='cartlength'>{state.length}</h6>
                 </NavLink>
             </div>
 
