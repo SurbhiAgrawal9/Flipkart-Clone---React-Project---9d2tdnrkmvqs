@@ -20,9 +20,9 @@
 }
 
 
-h4 .gsttotal {
+/* h4 .gsttotal {
     background-color: green;
-}
+} */
 
 .dele {
     margin-right: 30px;
@@ -40,7 +40,7 @@ h4 .gsttotal {
 }
 
 .total {
-    background-color: #fff;
+    background-color: #2874f0;
     color: black;
     width: 80%;
     display: flex;
@@ -60,6 +60,10 @@ h4 .gsttotal {
 .tt .t {
     color: #0e0d0d;
     font-size: 28px;
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 12px;
+    padding: 0px 10px 0px 10px;
 
 }
 

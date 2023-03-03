@@ -118,7 +118,7 @@ const Buy = (props) => {
                     <div className='pin'>
                         <label htmlFor="Pincode">Pincode :- </label>
                         <input type="text" placeholder='Enter Pincode .. ' value={pincode} onChange={e => setPincode(e.target.value)} />
-                        <span>Check delivery available or not</span>
+
                     </div>
                     <div className='name'>
                         <label htmlFor="Name">Name :- </label>

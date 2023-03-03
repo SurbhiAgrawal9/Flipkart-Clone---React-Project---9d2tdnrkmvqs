@@ -268,18 +268,18 @@ header {
 
 .search-box button[type="submit"] {
     padding: 10px;
-    background-color: #111111;
+    background-color: #fff;
     border: none;
     border-radius: 2px;
-    color: rgb(255, 254, 254);
+    color: rgb(7, 7, 7);
     font-weight: 90px;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .search-box button[type="submit"]:hover {
     box-shadow: 0px 5px 5px 0px black;
-    background-color: #f8fbff;
-    color:black;
+    background-color: #040404;
+    color: #fff;
 }
 
 .cart a {
@@ -352,6 +352,7 @@ header {
 }
 
 .cartlength {
-    color: rgb(38, 3, 3);
+    color: #fff;
     font-weight: 1px;
+    padding: 4px;
 }

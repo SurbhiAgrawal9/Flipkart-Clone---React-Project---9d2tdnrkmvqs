@@ -51,7 +51,7 @@ const Cart = () => {
                     </div>
                     <div className="tt">
                         <p className='t'>Total - </p>
-                        <p className='t'> ${totalPrice} </p>
+                        <p className='t'> ${Math.round(totalPrice)} </p>
                     </div>
                 </div>
             </div>
@@ -67,7 +67,7 @@ const Cart = () => {
                                     <h4>{item.title}</h4>
                                     <p>Rating : {item.rating.rate}</p>
                                     <h4>${item.price}</h4>
-                                    <h4 className='gsttotal'>15% gst, total price = {item.price + gst}</h4>
+                                    <h4 className='gsttotal'>15% gst, total price = {Math.round(item.price + gst)}</h4>
                                 </div>
                                 <div className="count">
                                     <button onClick={() => dispatch1({ type: 'INCREMENT', paylode: item })}>+</button>
@@ -83,7 +83,7 @@ const Cart = () => {
                 }
 
                 <NavLink to={{ pathname: '/buyNow', state: { price: totalPrice } }}>
-                    <button className='btn buybtn'>Buy Now for $ {totalPrice}</button>
+                    <button className='btn buybtn'>Buy Now for $ {Math.round(totalPrice)}</button>
                 </NavLink>
             </div>
 
