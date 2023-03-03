@@ -142,4 +142,4 @@ const Buy = (props) => {
     )
 }
 
-export default Buygit
+export default Buy
