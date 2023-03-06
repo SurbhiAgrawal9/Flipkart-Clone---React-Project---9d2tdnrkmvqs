@@ -69,11 +69,7 @@ const Cart = () => {
                                     <h4>${item.price}</h4>
                                     <h4 className='gsttotal'>15% gst, total price = {Math.round(item.price + gst)}</h4>
                                 </div>
-                                <div className="count">
-                                    <button onClick={() => dispatch1({ type: 'INCREMENT', paylode: item })}>+</button>
-                                    <span>{state1.count}</span>
-                                    <button onClick={() => dispatch1({ type: 'DECREMENT', paylode: item })}>-</button>
-                                </div>
+
                                 <h1 className='dele' onClick={() => dispatch({ type: 'REMOVE', paylode: item })}>
                                     <i class="fa-solid fa-trash"></i>
                                 </h1>

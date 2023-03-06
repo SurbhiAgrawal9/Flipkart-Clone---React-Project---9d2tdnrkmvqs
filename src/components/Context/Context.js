@@ -17,6 +17,7 @@ export const Context = (props) => {
             case 'REMOVE':
                 const tempstate = state.filter((item) => item.id !== action.paylode.id)
                 return tempstate
+            
 
             default: return state;
         }
